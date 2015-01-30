@@ -31,7 +31,8 @@ urlpatterns = patterns('',
     url(r'^api/posts/', 'core.views.post_view', name='post_view'),
     url(r'^api/toggle-like/', 'core.views.like_view', name='like_view'),
     url(r'^api/comments/(?P<post_id>\d+)/$', 'core.views.comment_view', name='comment_view'),
-    url(r'^api/userprofile/', 'useraccount.views.userprofile_view', name='userprofile_view')
+    url(r'^api/userprofile/', 'useraccount.views.userprofile_view', name='userprofile_view'),
+    url(r'^api/upload-profile-picture/', 'useraccount.views.upload_profile_picture_view', name='upload_profile_picture_view')
 
 )
 
